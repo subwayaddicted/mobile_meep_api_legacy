@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "792122322087",
+    "firebase_url": "https://mobile-meep.firebaseio.com",
+    "project_id": "mobile-meep",
+    "storage_bucket": "mobile-meep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792122322087:android:3c57fa64e1b2e7ca1cbf82",
+        "android_client_info": {
+          "package_name": "com.subwayaddicted.mobile_meep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792122322087-624qivk5jn2l433dcoqratlomobkogo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.subwayaddicted.mobile_meep",
+            "certificate_hash": "ca08510fdf43c69da86f9ca107cd8016dcced4e0"
+          }
+        },
+        {
+          "client_id": "792122322087-thp1a99kio5csf5vsa50lrutesmenafp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj4aEYqu3X8NN4-up7TBWBIu70-TuRAFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792122322087-thp1a99kio5csf5vsa50lrutesmenafp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
