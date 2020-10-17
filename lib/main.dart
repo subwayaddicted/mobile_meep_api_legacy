@@ -1,11 +1,16 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-import './screens/homePage.dart';
+import 'screens/home_page.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MeepMobile());
+}
 
 /// This Widget is the main application widget.
-class MyApp extends StatelessWidget {
+class MeepMobile extends StatelessWidget {
   static const String _title = 'Meep mobile';
 
   @override
@@ -17,7 +22,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.orange,
         accentColor: Colors.orangeAccent,
       ),
-      home: HomePage(),
+      home: SafeArea(child: HomePage()),
     );
   }
 }

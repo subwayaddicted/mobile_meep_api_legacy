@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/bookmarkWidget.dart';
-import '../widgets/inputWidget.dart';
+import 'about_page.dart';
+import 'input_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -13,8 +13,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentTab = 0;
   final List<Widget> _children = [
-    InputWidget(),
-    BookmarkWidget(),
+    InputPage(),
+    AboutPage(),
   ];
 
   void _onItemTapped(int value) {
@@ -35,13 +35,15 @@ class _HomePageState extends State<HomePage> {
                     Icons.input,
                     size: 30,
                   ),
-                  label: 'Input'),
+                  // ignore: deprecated_member_use
+                  title: SizedBox.shrink()),
               BottomNavigationBarItem(
                   icon: Icon(
-                    Icons.bookmark_border,
+                    Icons.info_outline,
                     size: 30,
                   ),
-                  label: 'Bookmark'),
+                  // ignore: deprecated_member_use
+                  title: SizedBox.shrink()),
             ]));
   }
 }
